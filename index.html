@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3-SAT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <div class="menuicon">
+        <div class="menuwrapper">
+            <table>
+                <tr>
+                    <td><div class="submenu1"></div></td><td><div class="submenu2"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="submenu2"></div></td><td><div class="submenu2"></div></td>
+                </tr>
+            </table>
+            <div class="submenuwrapper">
+                <div class="menu1">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="asset/alg.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Monien Speckenmeyer
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="members">
+                <table>
+                    <tr>
+                        <td>Enggar Dwi Prihastomo</td>
+                    </tr>
+                    <tr>
+                        <td>Sushree Smaranika Pradhan</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <table>
+            <tr>
+                <td>
+                    <img src="asset/logo.png" alt="" height="200">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Checking Satisfiability Problem in <strong>3-CNF</strong> Form
+                </td>
+            </tr>
+            <tr>
+                <td style="display: flex; justify-content: center; align-items: center;">
+                    <div class="input-wrapper">
+                        <div class="btn-upload-wrapper">
+                            <button class="btn-upload">
+                                <label>
+                                        Upload Formula
+                                    <input type="file" accept=".txt" class="Formula3SAT">
+                                </label>
+                            </button>
+                        </div>
+                        <div class="input-formula-wrapper">
+                            <input type="text" placeholder="Formula" class="input-formula"><button class="btn-or">∨</button><button class="btn-and">∧</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn-check">Check</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="result">
+        <button class="close">X</button>
+        <div class="detail">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            RESULT
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Algorithm
+                        </td>
+                        <td id="algorithm"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Time Complexity
+                        </td>
+                        <td id="complexity"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Formula
+                        </td>
+                        <td id="formula"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Number of Variables
+                        </td>
+                        <td id="variables"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Number of Clauses
+                        </td>
+                        <td id="clauses"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Status
+                        </td>
+                        <td id="status"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Satisfying Assignment
+                        </td>
+                        <td id="assignment"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="messagesection"></div>
+</body>
+</html>
+<script src="js/JQuery.js"></script>
+<script src="js/UIController.js"></script>
+<script src="js/AlgorithmController.js"></script>
+<script src="js/MainController.js"></script>

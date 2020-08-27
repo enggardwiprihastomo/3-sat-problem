@@ -1,0 +1,1 @@
+(X1 OR X2 OR X3) AND (~X1 OR ~X2 OR ~X3) AND (X1 OR ~X2) AND (~X1 OR X3)

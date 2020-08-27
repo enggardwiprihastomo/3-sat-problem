@@ -1,0 +1,1 @@
+(x1 OR x4) AND (x1 OR ~x2 OR x3) AND (x1 OR ~x2) AND (x2 OR x3 OR ~x4)
